@@ -1,40 +1,42 @@
+<!DOCTYPE html>
 <html>
-    
-    <head>
-    <title>FLA NOTES</title>
-    <link rel="stylesheet" type="text/css" href="bootstrap.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="scrolldown.css">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+<div class="navbar header">
+    <a  href=""><i class="fa fa-car">   Home</i></a> 
+    <a  href="https://github.com/Barathkumar-09">About</a>
+    <a  href="#">contact</a>
+    <a  href="">Practice problems</a>
+                          
+    <a  href="https://drive.google.com/file/d/1PY-7Dq4njDdSui7goy7wm6UK3cr9fx7x/view?usp=sharing">Sylabus</a>
+    <a  href="Introduction to Automata Theory, Formal Language and Computability Theory.pdf">E-BOOK <i class="fa fa-caret-down"></i></a>
+ <!-- <div class="dropdown">
+    <button class="dropbtn">E-BOOK 
+      <i class="fa fa-caret-down"></i>
+    </button>
+       <div class="dropdown-content">
+      <a href="https://drive.google.com/file/d/1jWGmKIp1NBkSnOkS3CRSRp5LUVhTNmQ2/view?usp=sharing">Automata Theory,Languages and Computation</a>
+      <a href="https://drive.google.com/file/d/1WcZAJaFT666dDHCEjqljwjXwMw95lJ0V/view?usp=sharing">Introduction to Theory of computing </a>
+      <a href="Introduction to Automata Theory, Formal Language and Computability Theory.pdf">Introduction to Automata Theory, Formal Language and Computability Theory</a>
+    </div> 
+  </div>  -->
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
 
-    
-    </head>
+<div class="header bar">
+  <div class="progress-bar" id="myBar"></div>
+</div>  
 
-    <body>
-        <!-- <script type="text/javascript">
-            var msg="THIS WEB PAGE COVERES ALMOST ALL THE IMPORTANT TOPICS ";
-            alert(msg);
-            console.log(msg);
-        </script> -->               
-        <div class="navbar">
-            <a  href=""><i class="fa fa-car">   Home</i></a> 
-            <a  href="https://github.com/Barathkumar-09">About</a>
-            <a  href="#">contact</a>
-            <a  href="">Practice problems</a>
-                                  
-            <a  href="https://drive.google.com/file/d/1PY-7Dq4njDdSui7goy7wm6UK3cr9fx7x/view?usp=sharing">Sylabus</a>
-         <div class="dropdown">
-            <button class="dropbtn">E-BOOK 
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="https://drive.google.com/file/d/1jWGmKIp1NBkSnOkS3CRSRp5LUVhTNmQ2/view?usp=sharing">Automata Theory,Languages and Computation</a>
-              <a href="https://drive.google.com/file/d/1WcZAJaFT666dDHCEjqljwjXwMw95lJ0V/view?usp=sharing">Introduction to Theory of computing </a>
-              <a href="Introduction to Automata Theory, Formal Language and Computability Theory.pdf">Introduction to Automata Theory, Formal Language and Computability Theory</a>
-            </div>
-          </div> 
-        </div>
-        <h2>What is Automata theory ?</h2>
+<h2>What is Automata theory ?</h2>
         <p>Automata theory is the study of abstract machines and automata, as well as the computational problems that can be solved using them. It is a theory in theoretical computer science. The word automata (the plural of automaton) comes from the Greek word αὐτόματα, which means "self-making".</p>
         <P>Automata theory is closely related to formal language theory. An automaton is a finite representation of a formal language that may be an infinite set. Automata are often classified by the class of formal languages they can recognize, typically illustrated by the Chomsky hierarchy, which describes the relations between various languages and kinds of formalized logics.Automata play a major role in theory of computation, compiler construction, artificial intelligence, parsing and formal verification.</p>
         
@@ -49,7 +51,43 @@
                 <li>P is Production rules for Terminals and Non-terminals. A production rule has the form α → β, where α and β are strings on VN ∪ ∑ and least one symbol of α belongs to VN.</li>
                 <img src="type_of_grammer.jpg">
             </P>
-        </div>    
-    </body>
+        </div> 
+        <ol>
+          <h3>Important Conversions</h3>
+          <li> <a href="https://cyberzhg.github.io/toolbox/regex2nfa">Regex => NFA </a>-Convert simple regular expressions to nondeterministic finite automaton.</li>
+          <li> <a href="https://cyberzhg.github.io/toolbox/nfa2dfa">Regex => NFA => DFA</a>- Convert simple regular expressions to deterministic finite automaton.</li>
+          <li> <a href="https://cyberzhg.github.io/toolbox/min_dfa">Regex => NFA => DFA => Min-DFA</a>-Convert simple regular expressions to minimum deterministic finite automaton.</a></li>
+          <li> <a href="https://cyberzhg.github.io/toolbox/left_fact">Left factoring</a></li>
+          <li> <a href="https://cyberzhg.github.io/toolbox/left_rec">Left recursion</a>-Try  to eliminate left recursion.</li>
+          <li> <a href="https://cyberzhg.github.io/toolbox/cfg2ll">CFG => LL(k)</a>-Try  to convert context-free grammar to LL(k) class.</li>
+          <li> <a href="https://cyberzhg.github.io/toolbox/cfg2cnf">CFG => CNF</a>-Try  to convert context-free grammar to Chomsky normal form.</a></li>
+          <li> <a href="https://cyberzhg.github.io/toolbox/first_follow">First & Follow</a>-Compute first and follow sets for context-free grammars.</a></li>
+          <li> <a href="https://cyberzhg.github.io/toolbox/lr0">LR(0)/SLR(1)</a>- Construct  parsing table and automaton for LR(0)/SLR(1) grammars.</a></li>
+          <li> <a href="https://cyberzhg.github.io/toolbox/lr1">LR(1)</a>- Construct parsing table and automaton for LR(1) grammars.</a></li>
+          <li> <a href="https://cyberzhg.github.io/toolbox/lalr">LALR</a>- Construct parsing table and automaton for LALR grammars.</a></li>
+          <li> <a href="https://cyberzhg.github.io/toolbox/cyk">CYK</a>- of parsing tables using CYK algorithm for CNF grammars.</a></li>
+      </ol>   
 
+<script>
+// When the user scrolls the page, execute myFunction 
+var myVar;
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+        window.onscroll = function() {myFunction()};
+        
+        function myFunction() {
+          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          var scrolled = (winScroll / height) * 100;
+          document.getElementById("myBar").style.width = scrolled + "%";
+        }
+        </script>
+</div>
+</body>
 </html>
